@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  body{
+    background-color: black;
+  }
+
+  h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: fantasy;
+    margin-top: 30px;
+  }
+
+  .button{
+    font-family: fantasy;
+    font-size: 20px;
+    background-color: Red;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    padding: 14px 40px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 12px;
+    margin-right: 10px;
+    margin-left: 150px;
+    margin-top: 20px;
+    width: 175px;
+  }
+  .button:hover {background-color: #800000}
+  .button:active {background-color: #800000}
+
+  ul{
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  }
+
+  li{
+  	float: left;
+  }
+
+  li a{
+  	display: block;
+  	padding: 8px;
+  	text-decoration: none;
+  }
+
+  .button1{
+    font-family: fantasy;
+    font-size: 20px;
+    background-color: Red;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    padding: 14px 40px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 12px;
+    margin-right: 250px;
+    margin-left: 300px;
+    margin-top: 20px;
+    width: 175px;
+    overflow: hidden;
+  }
+  .button1:hover {background-color: #800000}
+  .button1:active {background-color: #800000}
+
+  .anim{
+  animation-name : fadein;
+  animation-duration : 0.5s;
+  }
+
+  @keyframes fadein{
+    from{opacity:0}
+    to{opacity:1;}
+  }
+
+  .animate{
+  	animation-duration : 2s;
+  	animation-name : fadein;
+  }
+
+  @keyframes fadein{
+  	from{opacity : 0;}
+  	to{opacity : 1;}
+  }
+
+  .zoom{
+  	transition : all 200ms ease-in;
+  	transfrom: scale(1);
+  }
+
+  .zoom:hover{
+  	transform : scale(1.2);
+  	transition : all 200ms ease-in;
+  }
+
+  .Img{
+  	border-radius:5px;
+    position: relative;
+    left: 160px;
+    top: 10px;
+  	width: 30%;
+  	height: 40%;
+    margin-right: 250px;
+  }
+
+  .Img1{
+    border-radius:50%;
+    position: relative;
+    left: 630px;
+    top: 30px;
+    width: 5%;
+    height: 5%;
+  }
+
+
+  </style>
+</head>
+<body class="anim">
+
+  <ul>
+
+    <li><a href = "Home Page.html" class = "button"> Home Page </a></li>
+    <li><a href = "AboutMe.html" class = "button"> About Me </a></li>
+    <li><a href = "Resume.html" class = "button"> Resume </a></li>
+    <li><a href = "Project.html" class = "button"> Projects </a></li>
+
+  </ul >
+
+  <h1> Projects </h1>
+
+  <div>
+    <img src="Pics/GitHub.png" alt="Projects" class="zoom Img">
+    <img src="Pics/1.jpg" alt="pic" class="zoom Img">
+  </div>
+
+  <ul>
+    <li><a href="https://github.com/Schwammeh/Projects---Updated.git"
+      class="button1" name="Porfolio"> Portfolio </a></li>
+    <li><a href="PersonalProject.html" class="button1" name="Personal Project">
+      Personal Project </a></li>
+  </ul>
+
+  <div>
+    <a href="https://www.facebook.com/profile.php?id=100027819104259">
+      <img src="Pics/fbIcon1.png" alt="Projects" class="Img1"></a>
+    <a href="https://www.instagram.com/senilejas/?hl=en">
+      <img src="Pics/gmailicon.jpg" alt="Projects" class="Img1"></a>
+    <a href="https://www.reddit.com/user/Schwammeh">
+      <img src="Pics/reddit.png" alt="Projects" class="Img1">
+  </div>
+
+
+</body>
+</html>
